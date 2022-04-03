@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log計算機</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <h1>log計算機</h1>
+    <p>logを計算します。底はデフォルトで2ですが変更可能です。</p>
+    
+    <div id="calc">
+        <span id="log" class="big">log</span> 
+        <input type="number" value="2" min="0" id="base" class="small">
+        <input type="number" value="2" min="0" id="number" class="big">
+        <input type="button" value="=" id="equal">
+        <input type="text"  value="ここに答えが表示されます" readonly id="answer" class="big">
+    </div>
+
+    <p>
+        単にlog(base, x) = log(x)/log(base)と計算しているだけです。<br>
+        軽量化のため簡素なページに仕上がりました。<br>
+        PWA対応が現在の目標です。
+    </p>
+    <p>
+        ＜動作確認環境＞<br>
+        Google Chrome 100.0.4896.60（Official Build） （64 ビット）<br>
+        Vivaldi 5.1.2567.73 (Stable channel) (64-bit) 
+    </p>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

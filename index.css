@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+#log {
+    font-size:xx-large;
+}
+
+#base {
+    font-size: x-small;
+    width: 4em;
+}
+
+#number {
+    font-size:x-large;
+    width: 3em;
+}
+
+#equal {
+    font-size: larger;
+    margin: 10px;
+    width: 2em;
+}
+
+#answer {
+    font-size: x-large;
+    width: 12em;
+}
