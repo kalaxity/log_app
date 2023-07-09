@@ -9,9 +9,9 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./serviceworker.js");
 }
 
-// 「＝」ボタンを押した際の処理を登録
-equalButton.addEventListener("click", () => {
-    let base = Number(baseArea.value);
+// log計算関数
+let calcLog = () => {
+		let base = Number(baseArea.value);
     let number = Number(numberArea.value);
     let ans;
 
@@ -23,4 +23,8 @@ equalButton.addEventListener("click", () => {
     }
 
     answerArea.value = ans;
-});
+}
+
+// フォーム入力時の処理を登録
+baseArea.addEventListener("input", calcLog);
+numberArea.addEventListener("input", calcLog);
